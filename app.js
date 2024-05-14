@@ -2,7 +2,7 @@ async function convertCurrencies() {
     const amount = document.getElementById('amount').value;
     const fromCurrencies = Array.from(document.getElementById('fromCurrencies').selectedOptions).map(option => option.value);
     const toCurrencies = Array.from(document.getElementById('toCurrencies').selectedOptions).map(option => option.value);
-    const apiKey = '690ce3e959ae6c23d69bbef1';  // ここに自分のAPIキーを入れる
+    const apiKey = 'API';
     const results = [];
 
     for (let fromCurrency of fromCurrencies) {
