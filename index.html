@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>通貨換算アプリ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>通貨換算アプリ</h1>
+    <div>
+        <input type="number" id="amount" placeholder="金額を入力" required>
+        <label for="fromCurrencies">換算元通貨 (複数選択可能):</label>
+        <select id="fromCurrencies" multiple>
+            <option value="USD">ドル (USD)</option>
+            <option value="JPY">円 (JPY)</option>
+            <option value="EUR">ユーロ (EUR)</option>
+            <option value="GBP">ポンド (GBP)</option>
+            <!-- 他の通貨オプション -->
+        </select>
+        <label for="toCurrencies">換算先通貨 (複数選択可能):</label>
+        <select id="toCurrencies" multiple>
+            <option value="USD">ドル (USD)</option>
+            <option value="JPY">円 (JPY)</option>
+            <option value="EUR">ユーロ (EUR)</option>
+            <option value="GBP">ポンド (GBP)</option>
+            <!-- 他の通貨オプション -->
+        </select>
+        <button onclick="convertCurrencies()">換算</button>
+    </div>
+    <div id="result"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
